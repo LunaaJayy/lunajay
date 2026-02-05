@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0em 2em;
+    margin: 0em 2em 50em 2em;
     font-family: "clother", sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -19,6 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border: red 2px solid;
 }
 
 h1 {
@@ -28,6 +29,23 @@ h1 {
     font-style: normal;
     font-size: 6em;
     color: var(--titel-kleur);
+
+    animation-timeline: view();
+	animation-name: titelOmhoog;
+	animation-timing-function: ease-out;
+	animation-fill-mode: both;
+	animation-range: cover 55% exit 80%;
+
+    position: sticky;
+    top: 0;
+}
+
+@keyframes titelOmhoog {
+    to {
+        transform: scale(50%);
+        font-weight: 100;
+        /* transform-origin: left top; */
+    }
 }
 
 h2 {
@@ -35,6 +53,11 @@ h2 {
     color: var(--titel-kleur);
 }
 
+/* om titel animatie te testen: */
+main {
+    display: flex;
+    flex-direction: column;
+}
 img {
-   width: 3em;
+   width: 6em;
 }
