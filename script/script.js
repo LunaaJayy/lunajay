@@ -1,5 +1,7 @@
 // api fetchen
 
+let header = document.querySelector('header')
+
 mijzelfKrijgen()
 
 async function mijzelfKrijgen () {
@@ -8,6 +10,9 @@ async function mijzelfKrijgen () {
     let response = await fetch(url)
     let preMezelf = await response.json()
     let mezelf = preMezelf.data
-    
-    console.log(mezelf.name)
+
+    let mijnNaam =
+    `<h1>${mezelf.nickname}</h1>`
+
+    header.insertAdjacentHTML("afterbegin", mijnNaam)
 }
