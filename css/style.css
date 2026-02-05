@@ -1,1 +1,33 @@
-/* dfsfd */
+:root {
+    --wit: white
+
+}
+
+body {
+    margin: 10em 2em;
+    font-family: "clother", sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+header {
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-family: "alphabet-soup-pro", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 4em;
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+img {
+   width: 1em;
+}
