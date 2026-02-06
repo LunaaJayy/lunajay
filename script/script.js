@@ -21,6 +21,8 @@ async function mijzelfKrijgen () {
 
 const rugzak = document.querySelector('img:nth-of-type(1)')
 const openRugzak = document.querySelector('img:nth-of-type(2)')
+const halsband = document.querySelector('img:nth-of-type(4)')
+const objecten = document.querySelector('img[src*="images/objecten/"]')
 
 rugzak.addEventListener('click', rugzakOpenen)
 
@@ -30,3 +32,9 @@ function rugzakOpenen() {
 }
 
 // objecten uit rugzak halen
+openRugzak.addEventListener('click', halsbandUit)
+
+function halsbandUit() {
+    halsband.classList.add('halsbandPos')
+
+}
