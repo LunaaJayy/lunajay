@@ -16,3 +16,17 @@ async function mijzelfKrijgen () {
 
     header.insertAdjacentHTML("afterbegin", mijnNaam)
 }
+
+// rugzak openen
+
+const rugzak = document.querySelector('img:nth-of-type(1)')
+const openRugzak = document.querySelector('img:nth-of-type(2)')
+
+rugzak.addEventListener('click', rugzakOpenen)
+
+function rugzakOpenen() {
+    rugzak.classList.add('hidden')
+    openRugzak.classList.remove('hidden')
+}
+
+// objecten uit rugzak halen

@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 0em 2em 50em 2em;
+    margin: 0em 0em 3em 0em;
     font-family: "clother", sans-serif;
     font-style: normal;
     font-weight: 200;
@@ -21,6 +21,8 @@ header {
     flex-direction: column;
     border: red 2px solid;
 }
+
+/* titel animatie */
 
 h1 {
     margin: 0;
@@ -53,11 +55,53 @@ h2 {
     color: var(--titel-kleur);
 }
 
-/* om titel animatie te testen: */
+/* gridding van rugzak en objecten */
 main {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) ;
+    grid-template-rows: repeat(6, 0.5fr) repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
 }
-img {
-   width: 6em;
+
+.hidden {
+    display: none;
+}
+
+img:nth-of-type(1), img:nth-of-type(2) {
+    grid-area: 7 / 2 / 9 / 5;
+    height: 40vh;
+    width: auto;
+}
+
+img:nth-of-type(3) {
+    grid-area: 5 / 2 / 6 / 3;
+    height: 10vh;
+    width: auto;
+}
+
+img:nth-of-type(4) {
+    grid-area: 4 / 4 / 5 / 6;
+    height: 10vh;
+    width: auto;
+}
+
+.halsbanduitrugzak {
+    animation: halsbandUitRugzak 0.5s ease-in-out;
+}
+
+@keyframes halsbandUitRugzak {
+    from {
+        transform: translateY(30vh) translateX(20vw);
+    }
+}
+
+.maskeruitrugzak {
+    animation: maskerUitRugzak 0.5s ease-in-out;
+
+}
+@keyframes maskerUitRugzak {
+    from {
+        transform: translateY(40vh) translateX(-10vw);
+    }
 }
