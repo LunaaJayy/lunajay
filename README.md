@@ -1,5 +1,6 @@
 # Checkout
-## Woensdag 4 februari 2026
+## Week 1
+### Woensdag 4 februari 2026
 **Wat heb ik vandaag gedaan?** \
 Ik heb twee workshops gevolgd (_) en ik heb verder VSCodium opgestart, mijn ontwerp verder uitgewerkt (schets) en alvast oefen svg plaatjes gedownload. Ik heb ook veel ideeen gekregen van de workshops.
 
@@ -16,7 +17,7 @@ Scrolled driven animations vond ik heel interessant om te leren, het heeft me oo
 Ik wil morgen de API in mijn website implenteren en de alvast een begin maken aan de spullen uit de rugzak halen. Ook wil ik meer styling toevoegen.
 
 
-## Donderdag 5 februari 2026
+### Donderdag 5 februari 2026
 **Wat heb ik vandaag gedaan?** \
 Als eerst heb ik de workshop 'Theming' gevolgd. Dit was erg interessant en heb ik veel van opgestoken. Vervolgens heb ik met scroll-driven animations ervoor proberen te zorgen dat mijn naam weggaat tijdens ht scrollen. Ik wilde daarna met position: sticky ervoor zorgen dat mijn naam boven bleef staan, echter is dat niet mogelijk doordat de header zijn container is, dus heb ik een ander idee. Verder is het mij gelukt de API te fetchen, die kan ik nu gebruiken voor mijn naam en leeftijd enzo.
 Tussendoor heb ik nog met Adobe gechat omdat mijn account het niet deed, en kleuren en fonts gekozen voor mijn webste
@@ -31,7 +32,7 @@ Hoe scroll-driven animations werken, en verder van de theming workshop
 De rugzak verder afmaken, zodat als mensen kijken, ze begrijpen wat mijn doel is.
 
 
-## Vrijdag 6 februari
+### Vrijdag 6 februari
 **Wat heb ik vandaag gedaan?** \
 Ik ben vooral verder gegaan aan de animatie met betrekking tot de rugzak. Ik ben erachter gekomen dat ik anchor positioning moet gebruiken, dus heb ik dat onderzocht en aan Sanne gevraagd. 
 
@@ -44,3 +45,17 @@ Ik heb vooral over anchor positioning geleerd. Ook dat als je op een foto kan dr
 
 **Wat ga ik morgen doen?**\
 Volgende week wil ik maandag het rugzak animatie gedeelte af hebben, verder wil ik ook de foto's gekozen hebben.
+
+## Week 2
+### Maandag 9 februari
+**Wat heb ik vandaag gedaan?** \
+Ik heb de plaatjes uitgezocht voor mijn website, dus dat je nier meer dat Mario logo krijgt en die zonnetjes. Ook heb ik met Javascript ervoor gezorgd dat de dialog voor elke knop werkt en ook dat het uit de rugtas goed komt. Verder ben ik begonnen aan het responsive maken van de website, alleen lukt een dingetje nu niet. Een media query die wordt doorgestreept als ik kijk bij de inspector, maar ik zou niet weten waarom. 
+
+**Hoeveel tijd heeft me dat gekost?**\
+Het uitzoeken van de foto's duurde 30 minuten, omdat het telkens niet goed werkte. Verder deed ik over de javascript met de anchor points 1/1,5 uur, en vervolgens de Dialog duurde ook nog 1,5 uur. Het responsive maken deed ik tussendoor.
+
+**Wat heb ik geleerd?**\
+Ik heb verder over anchor points geleerd en vooral over dialogs. Verder heb ik mijn basiskennis ook weer refresht met grids en flexbox.
+
+**Wat ga ik morgen doen?**\
+Morgen wil ik het media query probleem oplossen en de thema's toevoegen. Daarnaast wil ik mijn leerdoelen opnoemen en een start maken aan de extra eis.

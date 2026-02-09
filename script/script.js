@@ -18,13 +18,8 @@ async function mijzelfKrijgen () {
 }
 
 // rugzak openen
-
-
 const rugzakKnop = document.querySelector('button:nth-of-type(1)')
 const openRugzakKnop = document.querySelector('button:nth-of-type(2)')
-
-const halsband = document.querySelector('button:nth-of-type(3)')
-const objecten = document.querySelector('img[src*="images/objecten/"]')
 
 rugzakKnop.addEventListener('click', rugzakOpenen)
 
@@ -41,5 +36,21 @@ function objectenEruit() {
     let object = volgendObject.dataset.class
 
     volgendObject.dataset.done = object;
-
 }
+
+//dialog openen / sluiten
+const alleSluitButtons = document.querySelectorAll("dialog button")
+
+const alleObjecten = document.querySelectorAll("button[data-class]")
+
+alleObjecten.forEach( function(object) {
+    const dialog = object.nextElementSibling
+    object.addEventListener('click', () => {
+        dialog.showModal()
+    })
+
+    const sluitButton = dialog.querySelector('button')
+    sluitButton.addEventListener('click', () => {
+        dialog.close()
+    })
+})

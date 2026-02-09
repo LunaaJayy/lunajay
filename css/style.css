@@ -1,6 +1,6 @@
 :root {
     --wit-achtergrond: #FFF8E7;
-    --titel-kleur: #4A5D23;
+    --tekst-kleur: #4A5D23;
 
 }
 
@@ -37,7 +37,7 @@ h1 {
     font-weight: 500;
     font-style: normal;
     font-size: 6em;
-    color: var(--titel-kleur);
+    color: var(--tekst-kleur);
 
     animation-timeline: view();
 	animation-name: titelOmhoog;
@@ -59,7 +59,7 @@ h1 {
 
 h2 {
     margin: 0;
-    color: var(--titel-kleur);
+    color: var(--tekst-kleur);
 }
 
 /* gridding van rugzak en objecten */
@@ -75,10 +75,8 @@ main {
     visibility: hidden;
 }
 
-button:nth-of-type(1), button:nth-of-type(2){
+main > button:nth-of-type(1), main > button:nth-of-type(2){
     grid-area: 7 / 2 / 9 / 5;
-    width: 100%;
-    height: 100%;
 }
 
 button:nth-of-type(1) img, button:nth-of-type(2) img {
@@ -95,14 +93,14 @@ button:nth-of-type(2) {
 /* positie halsband */
 main > img:nth-of-type(1){
     width: 2.5em;
-    grid-area: 5 / 2 / 6 / 3;
+    grid-area: 6 / 2 / 7 / 3;
     anchor-name: --halsband;
 }
 
 /* positie theater */
 main > img:nth-of-type(2){
     width: 2.5em;
-    grid-area: 6 / 4 / 7 / 5;
+    grid-area: 5 / 4 / 6 / 5;
     anchor-name: --theater;
 }
 
@@ -122,7 +120,7 @@ main > img:nth-of-type(4){
 /* positie puzzel */
 main > img:nth-of-type(5){
     width: 2.5em;
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 3 / 2 / 4 / 3;
     anchor-name: --puzzel;
 }
 
@@ -132,8 +130,9 @@ img + button img {
     max-width: 100px;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 949px) {
     main {
+        height: 100vh;
         grid-template-columns: repeat(10, 0.5fr);
         grid-template-rows: repeat(2, 1fr) repeat(6, 0.5fr) repeat(2, 1fr);
     }
@@ -186,6 +185,42 @@ button {
     &[data-done=object5] {
         position-anchor: --puzzel;
     }   
+}
+
+dialog {
+    border: none;
+    border-radius: 2em;
+
+    text-align: center;
+    color: var(--tekst-kleur);
+
+    max-width: 40em;
+}
+
+dialog div{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+dialog img {
+    width: 8em;
+}
+
+dialog button {
+    text-align: center;
+    background-color: var(--tekst-kleur);
+    padding: 1em;
+    border-radius: 0.6em;
+    color: var(--wit-achtergrond);
+}
+
+dialog p {
+    margin-left:1em;
+}
+
+dialog::backdrop {
+    backdrop-filter: blur(3px);
 }
 
 
