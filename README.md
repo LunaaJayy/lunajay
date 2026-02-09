@@ -29,3 +29,18 @@ Hoe scroll-driven animations werken, en verder van de theming workshop
 
 **Wat ga ik morgen doen?**\
 De rugzak verder afmaken, zodat als mensen kijken, ze begrijpen wat mijn doel is.
+
+
+## Vrijdag 6 februari
+**Wat heb ik vandaag gedaan?** \
+Ik ben vooral verder gegaan aan de animatie met betrekking tot de rugzak. Ik ben erachter gekomen dat ik anchor positioning moet gebruiken, dus heb ik dat onderzocht en aan Sanne gevraagd. 
+
+**Hoeveel tijd heeft me dat gekost?**\
+ Dit heeft me eigenlijk de hele dag gekost. Ik denk 4 tot 5 uur. Echter, ik weet nu wel wat ik allemaal moet doen en ik snap het ook!
+
+**Wat heb ik geleerd?**\
+Ik heb vooral over anchor positioning geleerd. Ook dat als je op een foto kan drukken dat het liefst een button moet worden. 
+
+
+**Wat ga ik morgen doen?**\
+Volgende week wil ik maandag het rugzak animatie gedeelte af hebben, verder wil ik ook de foto's gekozen hebben.
