@@ -19,22 +19,27 @@ async function mijzelfKrijgen () {
 
 // rugzak openen
 
-const rugzak = document.querySelector('img:nth-of-type(1)')
-const openRugzak = document.querySelector('img:nth-of-type(2)')
-const halsband = document.querySelector('img:nth-of-type(4)')
+
+const rugzakKnop = document.querySelector('button:nth-of-type(1)')
+const openRugzakKnop = document.querySelector('button:nth-of-type(2)')
+
+const halsband = document.querySelector('button:nth-of-type(3)')
 const objecten = document.querySelector('img[src*="images/objecten/"]')
 
-rugzak.addEventListener('click', rugzakOpenen)
+rugzakKnop.addEventListener('click', rugzakOpenen)
 
 function rugzakOpenen() {
-    rugzak.classList.add('hidden')
-    openRugzak.classList.remove('hidden')
+    rugzakKnop.classList.add('hidden')
+    openRugzakKnop.classList.remove('hidden')
 }
 
 // objecten uit rugzak halen
-openRugzak.addEventListener('click', halsbandUit)
+openRugzakKnop.addEventListener('click', objectenEruit)
 
-function halsbandUit() {
-    halsband.classList.add('halsbandPos')
+function objectenEruit() {
+    let volgendObject = document.querySelector("button[data-class]:not([data-done])")
+    let object = volgendObject.dataset.class
+
+    volgendObject.dataset.done = object;
 
 }
