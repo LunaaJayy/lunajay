@@ -1,6 +1,7 @@
 // api fetchen
 
-let header = document.querySelector('header')
+const container = document.querySelector('header div')
+const main = document.querySelector('main')
 
 mijzelfKrijgen()
 
@@ -8,13 +9,16 @@ async function mijzelfKrijgen () {
     const url = 'https://fdnd.directus.app/items/person/305'
     
     let response = await fetch(url)
-    let preMezelf = await response.json()
-    let mezelf = preMezelf.data
+    let bijnaMijnData = await response.json()
+    let mijnData = bijnaMijnData.data
 
-    let mijnNaam =
-    `<h1>${mezelf.nickname}</h1>`
+    let spanNaamObject = JSON.parse(mijnData.custom)
 
-    header.insertAdjacentHTML("afterbegin", mijnNaam)
+    let mijnNaamH1 =
+    `<h1>${spanNaamObject.spanName}</h1>`
+
+    container.insertAdjacentHTML("afterbegin", mijnNaamH1)
+
 }
 
 // rugzak openen

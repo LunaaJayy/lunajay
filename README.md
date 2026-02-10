@@ -59,3 +59,19 @@ Ik heb verder over anchor points geleerd en vooral over dialogs. Verder heb ik m
 
 **Wat ga ik morgen doen?**\
 Morgen wil ik het media query probleem oplossen en de thema's toevoegen. Daarnaast wil ik mijn leerdoelen opnoemen en een start maken aan de extra eis.
+
+### Dinsdag 10 februari
+**Wat heb ik vandaag gedaan?**\
+Ik heb over mijn titel een animation scroll gedaan, daarbij ook nog dat de titel sticky blijft, zodat ik mijn h3 weg kon halen. Dit heb ik samen met Cyd en Sanne gedaan. Verder heb ik een idee bedacht hoe ik de API verder kan verwerken, ik ben ermee begonnen dit uit te werken. Eerst wilde ik een <a> meteen om de foto te doen. Maar om het makkelijker te maken kun je bij het API gedeelte via de dialog komen. Als laatste heb ik ook nog light-dark thema's toegevoegd.
+
+**Hoeveel tijd heeft me dat gekost?**\
+Dit heeft mij allemaal de hele dag gekost.
+De animation scroll duurde 2,5 uur ongeveer. Het bedenken van de API duurde een een half uur en het verder afmaken duurde nog een uur. De light-dark thema's duurde half uurtje.
+
+**Wat heb ik geleerd?**\
+Ik heb geleerd over @container en meer over scroll-animations (ook over hoe position:sticky werkt). Verder heb ik meer over flexbox geleerd (zoals flex-basis).
+
+**Wat ga ik morgen doen?**\
+Ik ga morgen de API verwerken, ik heb een deel van de voorbereidingen ervoor gedaan, dus hoef zo alleen nog de rest te doen. Voor de rest wil ik de puntjes op de 'i' nog doen.
+
+

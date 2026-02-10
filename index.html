@@ -1,81 +1,143 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Luna Jay</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/gcf6rkp.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/gcf6rkp.css" />
+</head>
+
 <body>
     <header>
-        <h2>This is me</h2>
+        <div class="inner">
+            <h2>This is me</h2>
+        </div>
     </header>
 
     <main>
-        <!-- rugzak -->
-        <button><img src="images/rugzak.png" alt="Rugzak met rits dicht"></button>
-        <button class="hidden"><img src="images/open-rugzak.png" alt="Rugzak met rits open"></button>
-
-        <!-- halsband -->
-        <img src="images/plaats.svg" alt="Aanduiding van plek van halsband">
-        <button data-class="object1"><img src="images/objecten/halsband.png" alt="Een halsband van Bobbi de hond"></button>
-        <dialog>
-            <div>
-                <img src="images/objecten/halsband.png" alt="De halsband van Bobbi">
-                <p>De halsband van mijn hondje, Bobbi. <br>Een witte golden retriever.</p>
-            </div>
-            <button autofocus>Sluiten</button>
-        </dialog>
- 
-        <!-- theater -->
-        <img src="images/plaats.svg" alt="Aanduiding van plek van theatermasker">
-        <button data-class="object2"><img src="images/objecten/theatermasker.png" alt="Een theatermasker"></button>
-        <dialog>
-            <div>
-                <img src="images/objecten/theatermasker.png" alt="Een theatermasker">
-                <p>Een theatermasker. <br>Ik heb een grote passie voor theater en zit op dit moment bij STA!, een studententoneelvereniging (heel lang woord).</p>
-            </div>
-            <button autofocus>Sluiten</button>
-        </dialog>
-
-        <!-- disco -->
-        <img src="images/plaats.svg" alt="Aanduiding van plek van discobal">
-        <button data-class="object3"><img src="images/objecten/discobal.png" alt="Een discobal"></button>
-        <dialog>
-            <div>
-                <img src="images/objecten/discobal.png" alt="Een discobal">
-                <p>Een discobal. <br>Ik hou van dansen en muziek! Niet professioneel dansen ofzo, maar als ik uit ga is het enige wat ik doe dansen</p>
-            </div>
-            <button autofocus>Sluiten</button>
-        </dialog>
-
-        <!-- laptop -->
-        <img src="images/plaats.svg" alt="Aanduiding van plek van laptop">
-        <button data-class="object4"><img src="images/objecten/laptop-klein.png" alt="Een laptop"></button>
-        <dialog>
-            <div>
-                <img src="images/objecten/laptop-klein.png" alt="Een discobal">
-                <p>Mijn laptop.<br> Erg belangrijk voor deze minor!</p>
-            </div>
-            <button autofocus>Sluiten</button>
-        </dialog>
-
-        <!-- puzzel -->
-        <img src="images/plaats.svg" alt="Aanduiding van plek van puzzel">
-        <button data-class="object5"><img src="images/objecten/puzzels.png" alt="Een paar puzzelstukjes"></button>
-        <dialog>
-            <div>
-                <img src="images/objecten/puzzels.png" alt="Een discobal">
-                <p>Puzzelstukjes.<br> Ik ben echt gek op puzzelen, misschien dat ik daarom ook deze minor heb gekozen..?</p>
-            </div>
-            <button autofocus>Sluiten</button>
-        </dialog>
         
+
+        <section class="voorwerpen-section">
+            <!-- rugzak -->
+            <button>
+                <img src="images/rugzak.png" alt="Rugzak met rits dicht" />
+            </button>
+            <button class="hidden">
+                <img src="images/open-rugzak.png" alt="Rugzak met rits open" />
+            </button>
+
+            <!-- halsband -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van halsband" />
+            <button data-class="object1">
+                <img src="images/objecten/halsband.png" alt="Een halsband van Bobbi de hond" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/halsband.png" alt="De halsband van Bobbi" />
+                    <p>
+                        De halsband van mijn hondje, Bobbi. <br />Een witte golden
+                        retriever.
+                    </p>
+                </div>
+                <button autofocus>Sluiten</button>
+            </dialog>
+
+            <!-- theater -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van theatermasker" />
+            <button data-class="object2">
+                <img src="images/objecten/theatermasker.png" alt="Een theatermasker" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/theatermasker.png" alt="Een theatermasker" />
+                    <p>
+                        Een theatermasker. <br />Ik heb een grote passie voor theater en
+                        zit op dit moment bij STA!, een studententoneelvereniging (heel
+                        lang woord).
+                    </p>
+                </div>
+                <button autofocus>Sluiten</button>
+            </dialog>
+
+            <!-- disco -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van discobal" />
+            <button data-class="object3">
+                <img src="images/objecten/discobal.png" alt="Een discobal" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/discobal.png" alt="Een discobal" />
+                    <p>
+                        Een discobal. <br />Ik hou van dansen en muziek! Niet
+                        professioneel dansen ofzo, maar als ik uit ga is het enige wat ik
+                        doe dansen
+                    </p>
+                </div>
+                <button autofocus>Sluiten</button>
+            </dialog>
+
+            <!-- laptop -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van laptop" />
+            <button data-class="object4">
+                <img src="images/objecten/laptop-klein.png" alt="Een laptop" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/laptop-klein.png" alt="Een discobal" />
+                    <p>
+                        Mijn laptop.<br />
+                        Erg belangrijk voor deze minor!
+                    </p>
+                </div>
+                <button autofocus>Sluiten</button>
+            </dialog>
+
+            <!-- puzzel -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van puzzel" />
+            <button data-class="object5">
+                <img src="images/objecten/puzzels.png" alt="Een paar puzzelstukjes" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/puzzels.png" alt="Een discobal" />
+                    <p>
+                        Puzzelstukjes.<br />
+                        Ik ben echt gek op puzzelen, misschien dat ik daarom ook deze
+                        minor heb gekozen..?
+                    </p>
+                </div>
+                <button autofocus>Sluiten</button>
+            </dialog>
+
+            <!-- iris en sela -->
+            <img src="images/plaats.svg" alt="Aanduiding van plek van poppetjes" />
+            <button data-class="object6">
+                <img src="images/objecten/iris-sela.png" alt="Poppetjes van Iris en Sela" />
+            </button>
+            <dialog>
+                <div>
+                    <img src="images/objecten/iris-sela.png" alt="Poppetjes van Iris en Sela" />
+                    <p>
+                        Poppetjes van Iris en Sela.<br />
+                        Mijn Web Design & Development besties. Die gaan ook mee in mijn WDD rugzakje. 
+                    </p>
+                <button autofocus>Sluiten</button>
+                <button>Meer info</button>
+                </div>
+            </dialog>
+        </section>
+
+        <section id="meerData">
+            <h3>Meer data</h3>
+
+<a href=""></a>
+        </section>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="script/script.js"></script>
 </body>
+
 </html>

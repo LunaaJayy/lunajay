@@ -1,6 +1,7 @@
 :root {
-    --wit-achtergrond: #FFF8E7;
-    --tekst-kleur: #4A5D23;
+    color-scheme: light dark;
+    --achtergrond:light-dark(#FFF8E7, #3D2B1F);
+    --tekst-kleur: light-dark(#4A5D23, #FFF8E7);
 
 }
 
@@ -10,15 +11,42 @@ body {
     font-style: normal;
     font-weight: 200;
     font-size: 12px;
-    background-color: var(--wit-achtergrond);
+    background-color: var(--achtergrond);
+
+    height:200vh;
 }
 
 header {
-    height: 100vh;
+    view-timeline-name: --header;
+
+    display: grid;
+    place-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 3;
+
+    margin-top:calc(50vh - 3.8em);
+
+    container-name: sticky-heading;
+    container-type: scroll-state;
+}
+
+
+.inner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+main {
+    position: absolute;
+    left:0;
+    right:0;
+    top:100vh;
+    height:100vh;
 }
 
 button {
@@ -31,30 +59,44 @@ button {
 
 /* titel animatie */
 
-h1 {
+h1, h3 {
+    color: var(--tekst-kleur);
     margin: 0;
     font-family: "alphabet-soup-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 6em;
-    color: var(--tekst-kleur);
-
-    animation-timeline: view();
-	animation-name: titelOmhoog;
-	animation-timing-function: ease-out;
-	animation-fill-mode: both;
-	animation-range: cover 55% exit 80%;
-
-    position: sticky;
-    top: 0;
 }
 
-@keyframes titelOmhoog {
-    to {
-        transform: scale(50%);
-        font-weight: 100;
-        /* transform-origin: left top; */
+h1 {
+    font-size: 6em;
+    span {
+        display: inline-block;
+        animation-name: titelAnimatie;
+        animation-timeline: --header;
+        animation-range: entry 70svh entry 110svh;
+        animation-fill-mode: both;
+        --translate-x: -10vw;
+        &:nth-child(2) {
+            --translate-x: 45vw;
+        }
     }
+}
+
+@keyframes titelAnimatie {
+    40% {
+        transform: translateX(var(--translate-x))
+    }
+}
+
+@container sticky-heading scroll-state(stuck: top) {
+    h1{
+			transform: translateX(calc(-50vw + 80px)) scale(0.5);
+			transition: transform 0.5s ease-out;
+		}
+	h2 {
+			opacity: 0;
+            transition: transform 0.5s ease-in;
+		}
 }
 
 h2 {
@@ -62,8 +104,14 @@ h2 {
     color: var(--tekst-kleur);
 }
 
+/* is dit nodig? */
+h1 {
+    transition: transform 0.5s ease-out
+}
+
+
 /* gridding van rugzak en objecten */
-main {
+.voorwerpen-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr) ;
     grid-template-rows: repeat(6, 0.5fr) repeat(2, 1fr);
@@ -75,7 +123,7 @@ main {
     visibility: hidden;
 }
 
-main > button:nth-of-type(1), main > button:nth-of-type(2){
+.voorwerpen-section > button:nth-of-type(1), .voorwerpen-section > button:nth-of-type(2){
     grid-area: 7 / 2 / 9 / 5;
 }
 
@@ -91,37 +139,44 @@ button:nth-of-type(2) {
 
 /* OBJECTEN */
 /* positie halsband */
-main > img:nth-of-type(1){
+.voorwerpen-section > img:nth-of-type(1){
     width: 2.5em;
     grid-area: 6 / 2 / 7 / 3;
     anchor-name: --halsband;
 }
 
 /* positie theater */
-main > img:nth-of-type(2){
+.voorwerpen-section > img:nth-of-type(2){
     width: 2.5em;
-    grid-area: 5 / 4 / 6 / 5;
+    grid-area: 5 / 5 / 6 / 6;
     anchor-name: --theater;
 }
 
 /* positie discobal */
-main > img:nth-of-type(3){
+.voorwerpen-section > img:nth-of-type(3){
     width: 2.5em;
     grid-area: 4 / 3 / 5 / 4;
     anchor-name: --disco;
 }
 
 /* positie laptop */
-main > img:nth-of-type(4){
+.voorwerpen-section > img:nth-of-type(4){
     width: 2.5em;
     grid-area: 3 / 5 / 4 / 6;
     anchor-name: --laptop;
 }
 /* positie puzzel */
-main > img:nth-of-type(5){
+.voorwerpen-section > img:nth-of-type(5){
     width: 2.5em;
     grid-area: 3 / 2 / 4 / 3;
     anchor-name: --puzzel;
+}
+
+/* positie popjes */
+.voorwerpen-section > img:nth-of-type(6){
+    width: 2.5em;
+    grid-area: 6 / 4 / 7 / 5;
+    anchor-name: --popje;
 }
 
 img + button img {
@@ -131,33 +186,36 @@ img + button img {
 }
 
 @media (min-width: 949px) {
-    main {
+    .voorwerpen-section {
         height: 100vh;
         grid-template-columns: repeat(10, 0.5fr);
         grid-template-rows: repeat(2, 1fr) repeat(6, 0.5fr) repeat(2, 1fr);
     }
-    button:nth-of-type(1), button:nth-of-type(2){
+    .voorwerpen-section > button:nth-of-type(1), .voorwerpen-section > button:nth-of-type(2){
         grid-area: 3 / 2 / 9 / 4;
     }
-    main > img:nth-of-type(1){
+    .voorwerpen-section > img:nth-of-type(1){
         grid-area: 3 / 6 / 4 / 7;
     } 
-    main > img:nth-of-type(2){
-        grid-area: 4 / 8 / 5 / 9;
+    .voorwerpen-section > img:nth-of-type(2){
+        grid-area: 3 / 8 / 4 / 9;
     } 
-    main > img:nth-of-type(3){
-        grid-area: 8 / 6 / 9 / 7;
+    .voorwerpen-section > img:nth-of-type(3){
+        grid-area: 7 / 6 / 8 / 7;
     } 
-    main > img:nth-of-type(4){
-        grid-area: 7 / 9 / 8 / 10;
+    .voorwerpen-section > img:nth-of-type(4){
+        grid-area: 8 / 9 / 9 / 10;
     } 
-    main > img:nth-of-type(5){
-        grid-area: 6 / 7 / 7 / 8;
+    .voorwerpen-section > img:nth-of-type(5){
+        grid-area: 5 / 7 / 6 / 8;
+    } 
+    .voorwerpen-section > img:nth-of-type(6){
+        grid-area: 5 / 9 / 6 / 10;
     } 
 }
 
 /* anchor positioning */
-button[data-class*='object'] {
+button[data-class*='object']{
     position: absolute;
     position-anchor: --rugzak;
 
@@ -184,7 +242,10 @@ button {
     }
     &[data-done=object5] {
         position-anchor: --puzzel;
-    }   
+    }
+    &[data-done=object6] {
+        position-anchor: --popje;
+    }
 }
 
 dialog {
@@ -203,6 +264,16 @@ dialog div{
     align-items: center;
 }
 
+dialog:last-of-type div {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    flex-wrap: wrap;
+    p {
+        width: auto;
+    }
+}
+
 dialog img {
     width: 8em;
 }
@@ -212,7 +283,7 @@ dialog button {
     background-color: var(--tekst-kleur);
     padding: 1em;
     border-radius: 0.6em;
-    color: var(--wit-achtergrond);
+    color: var(--achtergrond);
 }
 
 dialog p {
