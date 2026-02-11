@@ -1,7 +1,8 @@
 :root {
     color-scheme: light dark;
-    --achtergrond:light-dark(#FFF8E7, #3D2B1F);
-    --tekst-kleur: light-dark(#4A5D23, #FFF8E7);
+    --background:light-dark(#FFF8E7, #3D2B1F);
+    --text-color: light-dark(#4A5D23, #FFF8E7);
+    
 
 }
 
@@ -11,7 +12,7 @@ body {
     font-style: normal;
     font-weight: 200;
     font-size: 12px;
-    background-color: var(--achtergrond);
+    background-color: var(--background);
 
     height:200vh;
 }
@@ -61,15 +62,17 @@ button {
 */
 
 h1, h3 {
-    color: var(--tekst-kleur);
+    color: var(--text-color);
     margin: 0;
     font-family: "alphabet-soup-pro", sans-serif;
     font-weight: 500;
     font-style: normal;
+    letter-spacing: 0.03em;
 }
 
 h1 {
     font-size: 6em;
+    transition: transform 0.5s ease-out;
     span {
         display: inline-block;
         animation-name: titelAnimatie;
@@ -102,31 +105,30 @@ h1 {
 
 h2 {
     margin: 0;
-    color: var(--tekst-kleur);
+    color: var(--text-color);
 }
 
-/* is dit nodig? */
-h1 {
-    transition: transform 0.5s ease-out
+h3 {
+    font-size: 2.5em;
 }
 
 
-/* MARK: Gridding van rugzak en objecten 
+/* MARK: Gridding van backpack en objecten 
 */
-.voorwerpen-section {
+.objects-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr) ;
     grid-template-rows: repeat(6, 0.5fr) repeat(2, 1fr);
     transition: 2s ease;
 }
 
-/* MARK: rugzak open/dicht
+/* MARK: backpack open/dicht
 */
 .hidden {
     visibility: hidden;
 }
 
-.voorwerpen-section > button:nth-of-type(1), .voorwerpen-section > button:nth-of-type(2){
+.objects-section > button:nth-of-type(1), .objects-section > button:nth-of-type(2){
     grid-area: 7 / 2 / 9 / 5;
 }
 
@@ -137,50 +139,50 @@ button:nth-of-type(1) img, button:nth-of-type(2) img {
 
 button:nth-of-type(2) {
     z-index: 2;
-    anchor-name: --rugzak;
+    anchor-name: --backpack;
 }
 
 /* MARK: OBJECTEN 
 */
-/* positie halsband */
-.voorwerpen-section > img:nth-of-type(1){
+/* positie collar */
+.objects-section > img:nth-of-type(1){
     width: 2.5em;
     grid-area: 6 / 2 / 7 / 3;
-    anchor-name: --halsband;
+    anchor-name: --collar;
 }
 
-/* positie theater */
-.voorwerpen-section > img:nth-of-type(2){
+/* positie theatre */
+.objects-section > img:nth-of-type(2){
     width: 2.5em;
     grid-area: 5 / 5 / 6 / 6;
-    anchor-name: --theater;
+    anchor-name: --theatre;
 }
 
 /* positie discobal */
-.voorwerpen-section > img:nth-of-type(3){
+.objects-section > img:nth-of-type(3){
     width: 2.5em;
     grid-area: 4 / 3 / 5 / 4;
     anchor-name: --disco;
 }
 
 /* positie laptop */
-.voorwerpen-section > img:nth-of-type(4){
+.objects-section > img:nth-of-type(4){
     width: 2.5em;
     grid-area: 3 / 5 / 4 / 6;
     anchor-name: --laptop;
 }
-/* positie puzzel */
-.voorwerpen-section > img:nth-of-type(5){
+/* positie puzzle */
+.objects-section > img:nth-of-type(5){
     width: 2.5em;
     grid-area: 3 / 2 / 4 / 3;
-    anchor-name: --puzzel;
+    anchor-name: --puzzle;
 }
 
 /* positie popjes */
-.voorwerpen-section > img:nth-of-type(6){
+.objects-section > img:nth-of-type(6){
     width: 2.5em;
     grid-area: 6 / 4 / 7 / 5;
-    anchor-name: --popje;
+    anchor-name: --doll;
 }
 
 img + button img {
@@ -190,30 +192,30 @@ img + button img {
 }
 
 @media (min-width: 949px) {
-    .voorwerpen-section {
+    .objects-section {
         height: 100vh;
         grid-template-columns: repeat(10, 0.5fr);
         grid-template-rows: repeat(2, 1fr) repeat(6, 0.5fr) repeat(2, 1fr);
     }
-    .voorwerpen-section > button:nth-of-type(1), .voorwerpen-section > button:nth-of-type(2){
+    .objects-section > button:nth-of-type(1), .objects-section > button:nth-of-type(2){
         grid-area: 3 / 2 / 9 / 4;
     }
-    .voorwerpen-section > img:nth-of-type(1){
+    .objects-section > img:nth-of-type(1){
         grid-area: 3 / 6 / 4 / 7;
     } 
-    .voorwerpen-section > img:nth-of-type(2){
+    .objects-section > img:nth-of-type(2){
         grid-area: 3 / 8 / 4 / 9;
     } 
-    .voorwerpen-section > img:nth-of-type(3){
+    .objects-section > img:nth-of-type(3){
         grid-area: 7 / 6 / 8 / 7;
     } 
-    .voorwerpen-section > img:nth-of-type(4){
+    .objects-section > img:nth-of-type(4){
         grid-area: 8 / 9 / 9 / 10;
     } 
-    .voorwerpen-section > img:nth-of-type(5){
+    .objects-section > img:nth-of-type(5){
         grid-area: 5 / 7 / 6 / 8;
     } 
-    .voorwerpen-section > img:nth-of-type(6){
+    .objects-section > img:nth-of-type(6){
         grid-area: 5 / 9 / 6 / 10;
     } 
 }
@@ -222,7 +224,7 @@ img + button img {
 */
 button[data-class*='object']{
     position: absolute;
-    position-anchor: --rugzak;
+    position-anchor: --backpack;
 
     left:anchor(center);
 	top:anchor(center);
@@ -234,10 +236,10 @@ button[data-class*='object']{
 
 button {
     &[data-done=object1] {
-        position-anchor: --halsband;
+        position-anchor: --collar;
     }
     &[data-done=object2] {
-        position-anchor: --theater;
+        position-anchor: --theatre;
     }
     &[data-done=object3] {
         position-anchor: --disco;
@@ -246,10 +248,10 @@ button {
         position-anchor: --laptop;
     }
     &[data-done=object5] {
-        position-anchor: --puzzel;
+        position-anchor: --puzzle;
     }
     &[data-done=object6] {
-        position-anchor: --popje;
+        position-anchor: --doll;
     }
 }
 
@@ -260,7 +262,7 @@ dialog {
     border-radius: 2em;
 
     text-align: center;
-    color: var(--tekst-kleur);
+    color: var(--text-color);
 
     max-width: 40em;
 }
@@ -276,21 +278,37 @@ dialog:last-of-type div {
     text-align: left;
     align-items: center;
     flex-wrap: wrap;
-    p {
-        width: auto;
+    justify-content: space-around;
+    
+    img {
+        flex-basis: 20%;
     }
+    p {
+        flex-basis: 70%;
+    }
+    button, a {
+        width: 8em;
+        padding: 0.7em;
+        margin-top: 1em;
+    }  
+    a {
+        color: var(--text-color);
+        border: var(--text-color) solid 0.2em;
+        background: none;
+        text-decoration: none;
+    } 
 }
 
 dialog img {
     width: 8em;
 }
 
-dialog button {
+dialog button, dialog a {
     text-align: center;
-    background-color: var(--tekst-kleur);
+    background-color: var(--text-color);
     padding: 1em;
     border-radius: 0.6em;
-    color: var(--achtergrond);
+    color: var(--background);
 }
 
 dialog p {

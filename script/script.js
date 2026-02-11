@@ -44,7 +44,6 @@ function objectenEruit() {
 
 //dialog openen / sluiten
 const alleSluitButtons = document.querySelectorAll('dialog button')
-
 const alleObjecten = document.querySelectorAll('button[data-class]')
 
 alleObjecten.forEach( function(object) {
@@ -58,3 +57,13 @@ alleObjecten.forEach( function(object) {
         dialog.close()
     })
 })
+
+// dialog sluiten bij drukken a
+const meerInfoLink = document.querySelector('dialog a')
+const linkDialog = document.querySelector('dialog:last-of-type')
+
+meerInfoLink.addEventListener('click', closeDialog)
+
+function closeDialog() {
+    linkDialog.close()
+}
