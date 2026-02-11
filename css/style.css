@@ -57,7 +57,8 @@ button {
     cursor: pointer;
 }
 
-/* titel animatie */
+/* MARK: Titel animatie 
+*/
 
 h1, h3 {
     color: var(--tekst-kleur);
@@ -110,7 +111,8 @@ h1 {
 }
 
 
-/* gridding van rugzak en objecten */
+/* MARK: Gridding van rugzak en objecten 
+*/
 .voorwerpen-section {
     display: grid;
     grid-template-columns: repeat(5, 1fr) ;
@@ -118,7 +120,8 @@ h1 {
     transition: 2s ease;
 }
 
-/* om rugzak open/dicht te wisselen */
+/* MARK: rugzak open/dicht
+*/
 .hidden {
     visibility: hidden;
 }
@@ -137,7 +140,8 @@ button:nth-of-type(2) {
     anchor-name: --rugzak;
 }
 
-/* OBJECTEN */
+/* MARK: OBJECTEN 
+*/
 /* positie halsband */
 .voorwerpen-section > img:nth-of-type(1){
     width: 2.5em;
@@ -214,7 +218,8 @@ img + button img {
     } 
 }
 
-/* anchor positioning */
+/* MARK: anchor positioning
+*/
 button[data-class*='object']{
     position: absolute;
     position-anchor: --rugzak;
@@ -248,6 +253,8 @@ button {
     }
 }
 
+/* MARK: dialogs
+*/
 dialog {
     border: none;
     border-radius: 2em;

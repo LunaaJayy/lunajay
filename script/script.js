@@ -17,7 +17,7 @@ async function mijzelfKrijgen () {
     let mijnNaamH1 =
     `<h1>${spanNaamObject.spanName}</h1>`
 
-    container.insertAdjacentHTML("afterbegin", mijnNaamH1)
+    container.insertAdjacentHTML('afterbegin', mijnNaamH1)
 
 }
 
@@ -36,16 +36,16 @@ function rugzakOpenen() {
 openRugzakKnop.addEventListener('click', objectenEruit)
 
 function objectenEruit() {
-    let volgendObject = document.querySelector("button[data-class]:not([data-done])")
+    let volgendObject = document.querySelector('button[data-class]:not([data-done])')
     let object = volgendObject.dataset.class
 
     volgendObject.dataset.done = object;
 }
 
 //dialog openen / sluiten
-const alleSluitButtons = document.querySelectorAll("dialog button")
+const alleSluitButtons = document.querySelectorAll('dialog button')
 
-const alleObjecten = document.querySelectorAll("button[data-class]")
+const alleObjecten = document.querySelectorAll('button[data-class]')
 
 alleObjecten.forEach( function(object) {
     const dialog = object.nextElementSibling
