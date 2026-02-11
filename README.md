@@ -103,8 +103,36 @@ Ik heb geleerd over @container en meer over scroll-animations (ook over hoe posi
 Ik ga morgen de API verwerken, ik heb een deel van de voorbereidingen ervoor gedaan, dus hoef zo alleen nog de rest te doen. Voor de rest wil ik de puntjes op de 'i' nog doen.
 
 ### Woensdag 11 februari
+**Wat heb ik vandaag gedaan?**\
+Als eerst heb ik samen met Ocean de code conventies doorgelopen en wat aangepast wat nu nog kon. Ik heb de extra eis toegevoegd aan mijn pagina en ook alle styling en ontwerp eromheen. Ik heb daar ook schetsen voor voor gemaakt in mijn boekje. Hier heb ik eigenlijk de hele dag aan gespendeerd. 
+
+**Hoeveel tijd heeft me dat gekost?**\
+Ik denk zo ongeveer 5 uur. Ik heb het hele ontwerp- tot codeerproces doorlopen.
 
 **Wat heb ik geleerd?**\
 Ik ben begonnen met leren dat je met MARK: heel makkelijk je CSS kan verdelen!
+Verder heb ik meer geleerd over het fetchen van API, zoals bijvoorbeeld het gebruik van Promise.all() maar ook style.setProperty. Een hele hoop dus.
+
+**Wat ga ik morgen doen?**\
+N.V.T (presenteren)
 
 ## Reflectie week 2
+Deze tweede week voelde productiever dan week 1. Ook al werkte ik in de eerste week veel aan de website, er was naar mijn idee niet veel resultaat. Echter, toen ik de anchor positioning duidelijk had en alle plaatjes toevoegde was het meteen een stuk voller en voelde het alsof ik een stuk verder was.
+
+Ik heb wederom, om efficienter en sneller te werken, geschetst voordat ik ging coderen. Met de afspraak met mezelf dat mijn schets niet perfect hoefde te zijn, omdat ik al coderend nog dingen kon aanpassen. Daarnaast gebruik ik mijn boekje ook om dingen in mijn hoofd op een rijtje te krijgen en te kunnen vertalen naar code, en als to do lijstje. Dit werkt heel goed voor mij en ben ik ook van plan verder in de minor te doen.
+
+![to do lijst en ideeen verder uitwerken ](/readme-images/9feb-grids-uitwerken.jpeg)
+![dialog schets](/readme-images/9feb-code-en-dialog.jpeg)
+![hoe api vormgeven schets](/readme-images/10feb-api-idee.jpeg)
+![api ontwerp](/readme-images/11feb-apischets.jpeg)
+
+Alles wat ik over CSS, maar ook Javascript heb geleerd is al erg veel. Ik ben erg blij met de ontwikkelingen die ik nu al heb gemaakt met mijn kennis. Het is voor mij soms nog wel lastig om te begrijpen wat er op MDN staat, als ik een bepaald stuk code wil begrijpen die ik bijvoorbeeld op het internet heb gelezen, maar ik denk dat naarmate mijn kennis verbreed ik dit ook sneller kan begrijpen.
+
+Mijn derde leerdoel was over het vinden van mijn eigen stijl. Nu ben ik nog steeds niet helemaal van mening dat dit mijn stijl is, maar ik vind het er wel heel leuk uit zien. Ik wil mezelf dus in deze minor gaan uitdagen om met veel stijlen te spelen, om te kijken wat mij goed ligt. 
+
+# Bronnen
+Over the dialog elemenet:
+- https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
+- https://stackoverflow.com/questions/71652623/cannot-close-dialog-element-with-display-set-to-grid
+
+De scroll-related animations en de anchor positioning komen van Sanne en Cyd.
