@@ -72,7 +72,6 @@ Gelukkig leerde Sanne mij over anchor positioning! Dit heb ik ook allemaal opges
 Ik weet nog niet zeker of ik nu echt mijn eigen stijl aan het overbrengen ben, ik heb namelijk best wel een speelse stijl die ik nu wil overbrengen (vooral nu nog te zien aan mijn letters), terwijl ik een nette, minimalistische stijl ook heel mooi vind. Echter, ik denk dat ik in deze aankomende minor beide stijlen wil uitproberen om te kijken wat ik leuker vind en mij beter licht. Ook met het idee dat dit in mijn portfolio terecht komt.
 
 
-
 ## Week 2
 ### Maandag 9 februari
 **Wat heb ik vandaag gedaan?** \
@@ -127,6 +126,8 @@ Ik heb wederom, om efficienter en sneller te werken, geschetst voordat ik ging c
 ![api ontwerp](/readme-images/11feb-apischets.jpeg)
 
 Alles wat ik over CSS, maar ook Javascript heb geleerd is al erg veel. Ik ben erg blij met de ontwikkelingen die ik nu al heb gemaakt met mijn kennis. Het is voor mij soms nog wel lastig om te begrijpen wat er op MDN staat, als ik een bepaald stuk code wil begrijpen die ik bijvoorbeeld op het internet heb gelezen, maar ik denk dat naarmate mijn kennis verbreed ik dit ook sneller kan begrijpen.
+
+Ik wil verder ook nog een extra leuk stukje code toevoegen aan mijn pagina, iets om gebruikers te 'irriteren' (naar idee van Sanne). Echter, na de puntjes op de i te zetten en de reflectie te schrijven had ik er niet veel tijd meer voor. Dus laat ik dit voor mijn volgende websites.
 
 Mijn derde leerdoel was over het vinden van mijn eigen stijl. Nu ben ik nog steeds niet helemaal van mening dat dit mijn stijl is, maar ik vind het er wel heel leuk uit zien. Ik wil mezelf dus in deze minor gaan uitdagen om met veel stijlen te spelen, om te kijken wat mij goed ligt. 
 
