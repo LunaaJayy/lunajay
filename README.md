@@ -45,26 +45,24 @@ Volgende week wil ik maandag het rugzak animatie gedeelte af hebben, verder wil 
 
 ## Reflectie week 1
 Om te beginnen, wil ik alvast zeggen dat ik meteen bij de eerste dag progressie heb gemaakt met mijn leerdoel: Efficiënter en sneller starten met mijn website (dus niet te perfectionistisch zijn). Ik had, voor mijn doen, best wel snel een idee, en vervolgens ben ik best snel begonnen met het uitwerken van het idee en coderen. Ik begon met wat snelle schetsen te maken in mijn boekje die ik had gekregen, daar haalde ik wat ideeën uit en meteen begon ik met het coderen.
-[Eerste schetsen](/readme-images/3feb-eersteschetsen.jpeg)
-[Meer schetsen](/readme-images/3feb-verderschetsen.jpeg)
-[Definitieve schets](/readme-images/3feb-def-schets.jpeg)
+![Eerste schetsen](/readme-images/3feb-eersteschetsen.jpeg)
+![Meer schetsen](/readme-images/3feb-verderschetsen.jpeg)
+![Definitieve schets](/readme-images/3feb-def-schets.jpeg)
 
 Om niet te perfectionistisch te zijn en efficiënter met mijn tijd om te gaan begon ik met wat placeholder foto's om alles meteen uit te proberen.
-[Placeholders tijdens gridding](/readme-images/gridding.png)
+![Placeholders tijdens gridding](/readme-images/gridding.png)
 
 Daarnaast wilde ik snellere schetsen maken met ideeën die ik had. Dit om én efficienter te ontwerpen maar ook om minder ChatGPT te gebruiken, door eerst mijn problemen uit te denken en mogelijke oplossingen uit te schrijven.
-[Gridding tekenen](/readme-images/5feb-gridding.jpeg)
-[Gridding en responsive](/readme-images/5feb-gridding-responsive.jpeg)
+![Gridding tekenen](/readme-images/5feb-gridding.jpeg)
+![Gridding en responsive](/readme-images/5feb-gridding-responsive.jpeg)
 
 
 Een ander leerdoel is dat ik mijn CSS beter wil ontwikkelen. Ik ben deze week begonnen aan de scoll animations maar het wil nog niet helemaal lukken, dat is juist de leuke uitdaging. Zo had ik bijvoorbeeld een eerste idee over hoe ik de objecten uit de rugzak wilde animeren, echter was dit voor één object te doen, maar voor meerdere had je heel veel code en classes nodig. 
-[Eerste code, animatie uit rugzak](/readme-images/animatie-uit-rugzak-code.png)
-[Video over eerste animatie](/readme-images/film-eerste-animatie.mov)
+![Eerste code, animatie uit rugzak](/readme-images/animatie-uit-rugzak-code.png)
+![Video over eerste animatie](/readme-images/film-eerste-animatie.mov)
 
 Gelukkig leerde Sanne mij over anchor positioning! Dit heb ik ook allemaal opgeschreven in mijn boekje.
-[Anchor positioning](/readme-images/6feb-anchor-positioning.jpeg)
-
-
+![Anchor positioning](/readme-images/6feb-anchor-positioning.jpeg)
 
 Ik weet nog niet zeker of ik nu echt mijn eigen stijl aan het overbrengen ben, ik heb namelijk best wel een speelse stijl die ik nu wil overbrengen (vooral nu nog te zien aan mijn letters), terwijl ik een nette, minimalistische stijl ook heel mooi vind. Echter, ik denk dat ik in deze aankomende minor beide stijlen wil uitproberen om te kijken wat ik leuker vind en mij beter licht. Ook met het idee dat dit in mijn portfolio terecht komt.
 
