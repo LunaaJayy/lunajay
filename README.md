@@ -130,6 +130,14 @@ Alles wat ik over CSS, maar ook Javascript heb geleerd is al erg veel. Ik ben er
 
 Mijn derde leerdoel was over het vinden van mijn eigen stijl. Nu ben ik nog steeds niet helemaal van mening dat dit mijn stijl is, maar ik vind het er wel heel leuk uit zien. Ik wil mezelf dus in deze minor gaan uitdagen om met veel stijlen te spelen, om te kijken wat mij goed ligt. 
 
+Als laatste heb ik ook nog geleerd dat het soms het beste is om te stoppen met coderen voor de dag, en de volgende ochtend opnieuw ernaar te kijken. Ik had bijvoorbeeld het probleem dat een media query niet werkte op de rugzak, waardoor de anchor positioning ook niet werkte. Ik probeerde er alles aan om het op te lossen, maar het lukte maar niet.. Vervolgens keek ik er de volgende dag naar en zag ik het meteen; het element was niet specifiek genoeg aangeroepen in de media query..
+
+![Media Query werkt niet](/readme-images/media-query-werkt-niet.png)
+
+Al met al vond ik dit een leuke eerste twee weken en ben ik erg benieuwd naar wat ik allemaal ga leren in de rest van de minor!
+
+
+
 # Bronnen
 Over the dialog elemenet:
 - https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/dialog
